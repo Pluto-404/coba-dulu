@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2oosos - Photography</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="scrollProgress"></div>
+
+  <header class="header">
+    <div class="nav-container">
+      <h1 class="logo">2oosos</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#preset">Preset</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="toggle-wrapper">
+        <select id="themePicker">
+          <option value="default">🌞 Default</option>
+          <option value="neon">🌌 Neon</option>
+          <option value="earth">🌿 Earth</option>
+          <option value="dark">🌙 Dark</option>
+          <option value="analog">🎞️ Analog</option>
+          <option value="pastel">🌸 Pastel</option>
+        </select>
+        <button id="menuToggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah sekelompok orang yang hobi fotografi. Walau hanya menggunakan handphone, kami tetap berusaha untuk menghasilkan foto terbaik.</p>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2>Galeri</h2>
+        <div class="filter-btns">
+          <button data-filter="all">Semua</button>
+          <button data-filter="nature">Alam</button>
+          <button data-filter="sunset">Senja</button>
+          <button data-filter="urban">Perkotaan</button>
+          <button data-filter="animal">Hewan</button>
+        </div>
+
+        <div class="sort-select">
+          <label for="sort">Urutkan: </label>
+          <select id="sort">
+            <option value="newest">Terbaru</option>
+            <option value="oldest">Terlama</option>
+            <option value="popular">Terpopuler</option>
+          </select>
+        </div>
+
+        <div class="gallery-masonry" id="galleryContainer">
+          <div class="gallery-item" data-date="2024-07-01" data-likes="10" data-tags="nature,sunset">
+            <img src="img/cemara.jpg" alt="Cemara">
+            <button class="like-btn">❤️ <span class="like-count">10</span></button>
+            <div class="tags">#nature #sunset</div>
+          </div>
+          <div class="gallery-item" data-date="2024-07-01" data-likes="10" data-tags="nature,sunset">
+            <img src="img/cemara.jpg" alt="Cemara">
+            <button class="like-btn">❤️ <span class="like-count">10</span></button>
+            <div class="tags">#nature #sunset</div>
+          </div>
+          <div class="gallery-item" data-date="2024-07-01" data-likes="10" data-tags="nature,sunset">
+            <img src="img/cemara.jpg" alt="Cemara">
+            <button class="like-btn">❤️ <span class="like-count">10</span></button>
+            <div class="tags">#nature #sunset</div>
+          </div>
+          <div class="gallery-item" data-date="2024-07-01" data-likes="10" data-tags="nature,sunset">
+            <img src="img/cemara.jpg" alt="Cemara">
+            <button class="like-btn">❤️ <span class="like-count">10</span></button>
+            <div class="tags">#nature #sunset</div>
+          </div>
+          <div class="gallery-item" data-date="2024-07-01" data-likes="10" data-tags="nature,sunset">
+            <img src="img/cemara.jpg" alt="Cemara">
+            <button class="like-btn">❤️ <span class="like-count">10</span></button>
+            <div class="tags">#nature #sunset</div>
+          </div>
+          <div class="gallery-item" data-date="2024-07-01" data-likes="10" data-tags="nature,sunset">
+            <img src="img/cemara.jpg" alt="Cemara">
+            <button class="like-btn">❤️ <span class="like-count">10</span></button>
+            <div class="tags">#nature #sunset</div>
+          </div>
+        </div>
+
+        <div class="load-more-container">
+          <button id="loadMore">Muat Lebih Banyak</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="preset" class="preset">
+      <div class="container">
+        <h2>Preset Gratis</h2>
+        <div class="preset-grid">
+          <div class="preset-card">
+            <img src="img/analoggg.jpg" alt="Analog Dreamy">
+            <h4>Analog Dreamy</h4>
+            <a href="https://drive.google.com/drive/folders/1W8aSjTqUvDwYbgGEpjF87ygnN3l_bJpb" target="_blank">Download</a>
+          </div>
+          <div class="preset-card">
+            <img src="img/fujifilm.jpg" alt="Fujifilm Look">
+            <h4>Fujifilm Look</h4>
+            <a href="https://drive.google.com/drive/folders/1WIK7ltg5YkWL1nBRDj9pOvmKYsS-c6in" target="_blank">Download</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <p>Instagram: <a href="https://instagram.com/2oosos" target="_blank">@2oosos</a></p>
+    <p id="quote"></p>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <audio id="bgMusic" loop preload="auto">
+  <source src="audio/lofi.mp3" type="audio/mp3">
+  Browser kamu tidak mendukung audio.
+</audio>
+<button id="toggleMusic" class="music-toggle">🔊</button>
+
+</body>
+</html>
